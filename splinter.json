@@ -24,17 +24,7 @@
     "packages": ["docker", "git", "wget", "feh", "python-pywal", "polybar", "network-manager-applet", "rofi", "vim", "xterm", "qutebrowser", "bitwarden-cli", "ranger"],
     "profile": "i3",
     "services": ["docker", "sshd"],
-    "superusers": {
-        "devel": {
-            "!password": "devel"
-        }
-    },
     "sys-encoding": "utf-8",
     "sys-language": "en_US",
-    "timezone": "US/Eastern",
-    "users": {
-        "sheldrick": {
-            "!password": "passwd123"
-        }
-    }
+    "timezone": "US/Eastern"
 }
