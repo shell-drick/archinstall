@@ -3,8 +3,7 @@
     "bootloader": "grub-install",
     "custom-commands": [
         "git clone http://aur.archlinux.org/yay.git /tmp/yay && cd /tmp/yay && makepkg -Si",
-        "git clone git@github.com:shell-drick/dotfiles.git /home/sheldrick && chown -R sheldrick /home/sheldrick",
-        "curl https://get.docker.com | bash"
+        "git clone git@github.com:shell-drick/dotfiles.git /home/sheldrick && chown -R sheldrick /home/sheldrick"
     ],
     "!encryption-password": "supersecret",
     "filesystem": "ext4",
@@ -22,9 +21,9 @@
         "NetworkManager": true
     },
     "ntp": true,
-    "packages": ["docker", "git", "wget", "feh", "python-pywal", "polybar", "network-manager-applet", "rofi", "vim"],
+    "packages": ["docker", "git", "wget", "feh", "python-pywal", "polybar", "network-manager-applet", "rofi", "vim", "xterm", "qutebrowser", "bitwarden-cli", "ranger"],
     "profile": "i3",
-    "services": ["docker"],
+    "services": ["docker", "sshd"],
     "superusers": {
         "devel": {
             "!password": "devel"
