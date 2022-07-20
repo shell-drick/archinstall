@@ -1,0 +1,40 @@
+{
+    "audio": "pipewire",
+    "bootloader": "grub-install",
+    "custom-commands": [
+        "git clone http://aur.archlinux.org/yay.git /tmp/yay && cd /tmp/yay && makepkg -Si",
+        "git clone git@github.com:shell-drick/dotfiles.git /home/sheldrick && chown -R sheldrick /home/sheldrick"
+    ],
+    "!encryption-password": "supersecret",
+    "filesystem": "ext4",
+    "gfx_driver": "Nvidia",
+    "harddrive": {
+        "path": "/dev/nvme0n1"
+    },
+    "hostname": "splinter",
+    "kernels": [
+        "linux"
+    ],
+    "keyboard-language": "us",
+    "mirror-region": "Worldwide",
+    "nic": {
+        "NetworkManager": true
+    },
+    "ntp": true,
+    "packages": ["docker", "git", "wget", ""],
+    "profile": "i3",
+    "services": ["docker"],
+    "superusers": {
+        "devel": {
+            "!password": "devel"
+        }
+    },
+    "sys-encoding": "utf-8",
+    "sys-language": "en_US",
+    "timezone": "US/Eastern",
+    "users": {
+        "sheldrick": {
+            "!password": "passwd123"
+        }
+    }
+}
