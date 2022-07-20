@@ -1,0 +1,6 @@
+{
+  "!superusers":
+  {
+    "sheldrick": { "!password": "sheldrick" }
+  }
+}
