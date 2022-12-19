@@ -1,30 +1,54 @@
 {
     "audio": "pipewire",
     "bootloader": "grub-install",
-    "custom-commands": [
-        "git clone http://aur.archlinux.org/yay.git /tmp/yay && cd /tmp/yay && sudo -u sheldrick makepkg -Si",
-        "git clone git@github.com:shell-drick/dotfiles.git /home/sheldrick && chown -R sheldrick /home/sheldrick"
-    ],
-    "!encryption-password": "supersecret",
     "filesystem": "ext4",
-    "gfx_driver": "Nvidia",
-    "harddrive": {
-        "path": "/dev/nvme0n1"
-    },
+    "gfx_driver": "All open-source (default)",
     "hostname": "splinter",
+    "keyboard-language": "us",
+    "mirror-region": "Worldwide",
+    "ntp": true,
+    "sys-encoding": "utf-8",
+    "sys-language": "en_US",
+    "timezone": "US/Eastern",
+    "desktop-environment": "i3",
+    "script": "guided",
     "kernels": [
         "linux"
     ],
-    "keyboard-language": "us",
-    "mirror-region": "Worldwide",
+    "profile": {
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py"
+    },
+    "harddrive": {
+        "path": "/dev/nvme0n1"
+    },
     "nic": {
         "NetworkManager": true
     },
-    "ntp": true,
-    "packages": ["docker", "git", "wget", "feh", "python-pywal", "polybar", "network-manager-applet", "rofi", "vim", "xterm", "qutebrowser", "bitwarden-cli", "ranger"],
-    "profile": "i3",
-    "services": ["docker", "sshd"],
-    "sys-encoding": "utf-8",
-    "sys-language": "en_US",
-    "timezone": "US/Eastern"
+    "services": [
+        "docker",
+        "sshd"
+    ],
+    "custom-commands": [
+        "curl https://get.docker.com | bash",
+        "git clone http://aur.archlinux.org/yay.git /tmp/yay && cd /tmp/yay && sudo -u sheldrick makepkg -Si",
+        "git clone git@github.com:shell-drick/dotfiles.git /home/sheldrick && chown -R sheldrick /home/sheldrick"
+    ],
+    "packages": [
+        "docker",
+        "git",
+        "wget",
+        "feh",
+        "python-pywal",
+        "polybar",
+        "network-manager-applet",
+        "rofi",
+        "vim",
+        "xterm",
+        "qutebrowser",
+        "bitwarden-cli",
+        "ranger",
+        "pamixer",
+        "ttf-font-awesome",
+        "bitwarden"
+    ]
 }
