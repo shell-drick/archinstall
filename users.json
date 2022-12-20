@@ -1,4 +1,5 @@
 {
+    "!root_password": "sheldrick",
     "!users": [
         {
             "!password": "sheldrick",
